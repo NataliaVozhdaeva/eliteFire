@@ -2,3 +2,5 @@ node_modules
 dist
 src/styles/*.css
 src/styles/*.map
+
+Home desktop.png

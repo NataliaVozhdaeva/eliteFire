@@ -26,6 +26,13 @@
   src: local('Scania Sans CY font'), url('../assets/fonts/ScaniaSansCY-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Scania Sans CY font';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Scania Sans CY font'), url('../assets/fonts/ScaniaSansCY-Bold.woff2') format('woff2');
+}
+
 @import './libs';
 
 $link: #949494;
@@ -34,6 +41,7 @@ $link-hover: #ffcf7a;
 .list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .link {
