@@ -1,0 +1,135 @@
+$bg: #1b1b1a;
+$yellow: #ffcf7a;
+
+.body {
+  max-width: 1440px;
+  margin: auto;
+
+  font-family: 'Lab Grotesque', 'Arial', sans-serif;
+  font-weight: 300;
+
+  background-color: $bg;
+  color: #ffffff;
+}
+
+.header {
+  margin: 75px 123px 223px;
+
+  background: url('../assets/img/bg/small-circle-gradient.png') no-repeat right 80px top 30px;
+  background-size: 45%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 81px;
+
+  &-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 277px;
+  }
+}
+
+.logo {
+  font-family: 'Scania Sans CY font', 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 350%;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  &-desc {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+
+    color: #6d6d6d;
+  }
+}
+
+.nav {
+  display: flex;
+  column-gap: 40px;
+  margin-left: auto;
+  margin-right: 61px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.call-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+  background-image: url('../assets/img/icons/tel.png');
+
+  &:hover {
+    box-shadow: 0 0 15px $yellow;
+  }
+}
+
+.hero {
+  background: url('../assets/img/bg/kamin.png') no-repeat right bottom;
+
+  &-wrapper {
+    max-width: 780px;
+  }
+
+  &-title {
+    margin-bottom: 30px;
+  }
+
+  &-subtitle {
+    margin-bottom: 130px;
+
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 222%;
+    letter-spacing: 0.05em;
+
+    color: $yellow;
+
+    &__small {
+      font-size: 18px;
+    }
+  }
+
+  &-features {
+    display: flex;
+    column-gap: 80px;
+    width: 291px;
+
+    &-item {
+      position: relative;
+
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 157%;
+      text-align: center;
+
+      &::before {
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 15px);
+        content: '';
+
+        width: 30px;
+        height: 30px;
+      }
+
+      &:first-child::before {
+        background: url('../assets/img/icons/css/svg/sprite.css-65b4205b.svg') 27.94759825327511% 71.01449275362319% no-repeat;
+      }
+
+      &:last-child::before {
+        background: url('../assets/img/icons/css/svg/sprite.css-65b4205b.svg') 34.49781659388646% 71.01449275362319% no-repeat;
+      }
+    }
+  }
+}
