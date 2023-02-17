@@ -1,5 +1,12 @@
 @font-face {
   font-family: 'Lab Grotesque';
+  font-style: thin;
+  font-weight: 100;
+  src: local('Lab Grotesque'), url('../assets/fonts/LabGrotesque-Thin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
   font-style: normal;
   font-weight: 300;
   src: local('Lab Grotesque'), url('../assets/fonts/LabGrotesque-Light.woff2') format('woff2');
@@ -51,15 +58,9 @@ $link-hover: #ffcf7a;
 }
 
 .title {
-  font-size: 64px;
-  line-height: 125%;
-  font-weight: 300;
-  letter-spacing: 0.05em;
+  font-weight: 100;
   text-transform: uppercase;
+
+  background-color: #ffffff;
+  color: transparent;
 }
-/* .div {
-  width: 100px;
-  height: 100px;
-  background-color: gray;
-  background-image: url('../assets/img/icons/css/svg/sprite.css-65b4205b.svg');
-} */
