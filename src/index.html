@@ -89,7 +89,9 @@
       <section class="about">
         <h2 class="about-title title"><span class="first">Умный камин</span><span class="last">очень умный</span></h2>
         <p class="about-subtitle">Даже если у Вас нет своего решения по умному дому. <br />Мы отлично ладим с Яндекс.Алиса и Mi Home.</p>
-        <img class="about-image" src="./assets/img/content/smart-kamin.png" alt="изображение умного камина" width="1306" height="452" />
+        <figure class="about-image-container">
+          <img class="about-image" src="./assets/img/content/smart-kamin.png" alt="изображение умного камина" width="1306" height="452" />
+        </figure>
 
         <ul class="about-description list">
           <li class="about-description-item fuelblock">
@@ -177,6 +179,89 @@
             </div>
           </li>
         </ul>
+      </section>
+      <section class="getcatalog">
+        <h3 class="getcatalog-title">Получите каталог с моделями и ценами на всю нашу продукцию</h3>
+        <button class="getcatalog-btn btn btn_big">Получить каталог!</button>
+      </section>
+      <section class="cases">
+        <h2 class="cases-title title">Есть задача? Есть решение!</h2>
+        <div class="cases-container carousel">
+          <img class="cases-image" src="./assets/img/content/plug.png" alt="фото работы" width="370" height="267" />
+          <img class="cases-image" src="./assets/img/content/plug.png" alt="фото работы" width="370" height="267" />
+          <img class="cases-image" src="./assets/img/content/plug.png" alt="фото работы" width="370" height="267" />
+        </div>
+      </section>
+      <section class="production">
+        <h2 class="production-title title">
+          Почемы мы можем многое?<br />
+          Свои люди. Свои станки. Своя лаборатория
+        </h2>
+        <div class="production-container carousel">
+          <img class="production-image" src="./assets/img/content/plug.png" alt="фото с производства" width="370" height="267" />
+          <img class="production-image" src="./assets/img/content/plug.png" alt="фото с производства" width="370" height="267" />
+          <img class="production-image" src="./assets/img/content/plug.png" alt="фото с производства" width="370" height="267" />
+        </div>
+      </section>
+      <section class="constructor">
+        <h2 class="constructor-title title">вы автор вашего камина</h2>
+        <form class="constructor-form" action="" method="get">
+          <div class="form-container">
+            <img
+              class="constructor-img"
+              src="./assets/img/content/kamin-constructor.png"
+              alt="базовая компектация камина для вашего конструктора"
+              width="533"
+              height="374" />
+            <label class="form-label" for="range"
+              ><p>Выберите длину</p>
+              <span class="range-start">0.5 м</span>
+              <input class="range" id="range" type="range" min="0.5" max="10" step="0.5" value="6.5" />
+              <span class="range-end">10 м</span>
+            </label>
+            <label class="form-label" for="face-panel"
+              ><p>Лицевая панель</p>
+              <div class="form-getpanel slider-btn">
+                <button class="btn slider-btn_prev"><span class="hidden">Предыдущий слайд</span></button>
+                <img
+                  class="form-getpanel-img"
+                  src="./assets/img/content/face-panel.png"
+                  alt="лицевая панель из материала 1"
+                  width="247"
+                  height="60" />
+                <button class="btn slider-btn_next"><span class="hidden">Следующий слайд</span></button>
+              </div>
+              <div class="form-face-panel-container" id="face-panel">
+                <input class="face-panel" type="radio" value="материал 1" />
+                <input class="face-panel" type="radio" value="материал 2" />
+                <input class="face-panel" type="radio" value="материал 3" />
+                <input class="face-panel" type="radio" value="материал 4" />
+              </div>
+            </label>
+            <label class="form-label" for="additional"
+              ><p>Дополнительные функции</p>
+              <form action="">
+                <label for="child protect">Защита от детей</label>
+                <input type="checkbox" name="child protect" value="child protect" /><br />
+                <label for="wi-fi"> Wi-Fi</label>
+                <input type="checkbox" name="wi-fi" value="wi-fi" /><br />
+                <label for="child protect">Защита от детей</label>
+                <input type="checkbox" name="child protect" value="child protect" /><br />
+                <label for="wi-fi"> Wi-Fi</label>
+                <input type="checkbox" name="wi-fi" value="wi-fi" /><br />
+                <label for="child protect">Защита от детей</label>
+                <input type="checkbox" name="child protect" value="child protect" /><br />
+                <label for="wi-fi"> Wi-Fi</label>
+                <input type="checkbox" name="wi-fi" value="wi-fi" /><br />
+                <label for="child protect">Защита от детей</label>
+                <input type="checkbox" name="child protect" value="child protect" /><br />
+                <label for="wi-fi"> Wi-Fi</label>
+                <input type="checkbox" name="wi-fi" value="wi-fi" />
+              </form>
+            </label>
+          </div>
+          <div class="form-footer"></div>
+        </form>
       </section>
     </main>
     <footer class="footer"></footer>

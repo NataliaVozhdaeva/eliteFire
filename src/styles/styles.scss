@@ -71,6 +71,7 @@ $link-hover: #ffcf7a;
   letter-spacing: 0.07em;
   font-size: 40px;
   line-height: 138%;
+  text-align: center;
 
   background-color: #ffffff;
   color: transparent;
@@ -85,4 +86,12 @@ $link-hover: #ffcf7a;
 
 .btn {
   border: none;
+  cursor: pointer;
+
+  &_big {
+    height: 60px;
+    padding: 15px 60px;
+
+    background-image: url('../assets/img/bg/btn-bg.png');
+  }
 }

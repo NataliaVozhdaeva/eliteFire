@@ -434,6 +434,32 @@ $yellow: #ffcf7a;
   &-image {
     display: block;
     margin: 0 auto 65px;
+
+    &-container {
+      position: relative;
+
+      &::before,
+      &::after {
+        position: absolute;
+        bottom: 170px;
+
+        font-size: 14px;
+        line-height: 236%;
+        font-weight: 500;
+
+        color: #464239;
+      }
+
+      &::before {
+        content: 'Яндекс.Алиса';
+        left: 275px;
+      }
+
+      &::after {
+        content: 'Mi Home Xiaomi';
+        right: 235px;
+      }
+    }
   }
 
   &-description {
@@ -538,16 +564,19 @@ $yellow: #ffcf7a;
       margin-top: 35px;
     }
   }
+
+  &-btns {
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+
+    column-gap: 16px;
+  }
 }
 
 .slider-btn {
-  position: absolute;
-  bottom: 45px;
-  left: 40px;
   width: auto;
-
   display: flex;
-  column-gap: 16px;
 
   &_prev,
   &next {
@@ -562,4 +591,51 @@ $yellow: #ffcf7a;
   &_next {
     background: url('../assets/img/icons/css/svg/sprite.css-65b4205b.svg') 48.51063829787234% 60.49382716049383% no-repeat;
   }
+}
+
+.getcatalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+
+  background: url('../assets/img/bg/btn-shadow.png') no-repeat bottom -30px center;
+
+  &-title {
+    margin-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 147%;
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+.cases {
+  padding-bottom: 20px;
+  margin-bottom: 70px;
+
+  &-title {
+    background: linear-gradient(249.07deg, #ffffff 36.17%, rgba(255, 255, 255, 0) 97.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.production {
+  padding-bottom: 20px;
+  margin-bottom: 70px;
+
+  &-title {
+    background: linear-gradient(239.18deg, #ffffff 25.25%, rgba(255, 255, 255, 0.07) 95.17%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1196px;
+  margin: auto;
 }
