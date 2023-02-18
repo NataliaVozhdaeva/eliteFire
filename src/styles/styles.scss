@@ -68,7 +68,21 @@ $link-hover: #ffcf7a;
 .title {
   font-weight: 100;
   text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 40px;
+  line-height: 138%;
 
   background-color: #ffffff;
   color: transparent;
+}
+
+.hidden {
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.btn {
+  border: none;
 }
