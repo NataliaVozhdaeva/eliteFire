@@ -36,6 +36,11 @@
 @import './libs';
 
 $link-hover: #ffcf7a;
+$link: #949494;
+
+html {
+  scroll-behavior: smooth;
+}
 
 .list {
   list-style: none;
@@ -45,9 +50,11 @@ $link-hover: #ffcf7a;
 
 .link {
   text-decoration: none;
+  color: $link;
+  transition: 0.3s;
 
   &:visited {
-    color: #ffffff;
+    color: $link;
   }
 
   &:hover {
@@ -85,6 +92,7 @@ $link-hover: #ffcf7a;
 .btn {
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 
   &_big {
     height: 60px;

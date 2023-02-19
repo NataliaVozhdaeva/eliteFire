@@ -21,8 +21,8 @@ $gray: #949494;
   margin: 75px auto 188px;
   padding: 0 123px;
 
-  background: url('../assets/img/bg/small-circle-gradient.png') no-repeat right 80px top -20px;
-  background-size: 45%;
+  background: url('../assets/img/bg/small-circle-gradient.png') no-repeat right 200px top 30px;
+  background-size: 35%;
 }
 
 .navigation {
@@ -68,16 +68,6 @@ $gray: #949494;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
-  color: $gray;
-
-  &-link:visited {
-    color: $gray;
-  }
-
-  &-link:hover {
-    color: $yellow;
-  }
 }
 
 .call-link {
@@ -472,12 +462,12 @@ $gray: #949494;
 
       &::before {
         content: 'Яндекс.Алиса';
-        left: 245px;
+        left: 120px;
       }
 
       &::after {
         content: 'Mi Home Xiaomi';
-        right: 20px;
+        right: 135px;
       }
     }
   }
@@ -930,9 +920,13 @@ $gray: #949494;
 }
 
 .footer {
-  padding: 72px 123px 18px;
-
   background-color: #121212;
+
+  &-wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 72px 123px 18px;
+  }
 
   &-title {
     width: 450px;
@@ -946,17 +940,24 @@ $gray: #949494;
 
   &-contacts {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     row-gap: 60px;
     max-height: 250px;
+    margin-bottom: 65px;
 
     &-item {
+      min-width: 33%;
       font-weight: 300;
       font-size: 14px;
       line-height: 36px;
 
       color: #949494;
+
+      &:nth-child(3) > .link {
+        font-size: 36px;
+      }
     }
 
     &-link {
@@ -967,8 +968,17 @@ $gray: #949494;
 
       color: #ffffff;
 
+      &:visited {
+        color: #ffffff;
+      }
+
+      &:hover {
+        color: $yellow;
+      }
+
       &_btn {
         width: 279px;
+        min-width: 33%;
         height: 60px;
         padding: 11px 29px;
 
@@ -979,5 +989,38 @@ $gray: #949494;
         border-radius: 2px;
       }
     }
+  }
+}
+
+.aside {
+  display: flex;
+  align-items: center;
+  column-gap: 47px;
+  height: 103px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  color: #6d6d6d;
+  border-top: 1px solid #232323;
+
+  &-logo {
+    margin-right: 110px;
+
+    line-height: 70px;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    text-align: left;
+
+    color: #ffffff;
+  }
+
+  &-agreement {
+    margin-left: auto;
+
+    text-align: right;
   }
 }
