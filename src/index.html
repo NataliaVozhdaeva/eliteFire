@@ -204,64 +204,84 @@
         </div>
       </section>
       <section class="constructor">
-        <h2 class="constructor-title title">вы автор вашего камина</h2>
-        <form class="constructor-form" action="" method="get">
-          <div class="form-container">
-            <img
-              class="constructor-img"
-              src="./assets/img/content/kamin-constructor.png"
-              alt="базовая компектация камина для вашего конструктора"
-              width="533"
-              height="374" />
-            <label class="form-label" for="range"
-              ><p>Выберите длину</p>
-              <span class="range-start">0.5 м</span>
-              <input class="range" id="range" type="range" min="0.5" max="10" step="0.5" value="6.5" />
-              <span class="range-end">10 м</span>
-            </label>
-            <label class="form-label" for="face-panel"
-              ><p>Лицевая панель</p>
-              <div class="form-getpanel slider-btn">
-                <button class="btn slider-btn_prev"><span class="hidden">Предыдущий слайд</span></button>
-                <img
-                  class="form-getpanel-img"
-                  src="./assets/img/content/face-panel.png"
-                  alt="лицевая панель из материала 1"
-                  width="247"
-                  height="60" />
-                <button class="btn slider-btn_next"><span class="hidden">Следующий слайд</span></button>
+        <h2 class="constructor-title title">Вы автор вашего камина</h2>
+        <div class="constructor-form-container">
+          <img
+            class="constructor-img"
+            src="./assets/img/content/kamin-constructor.png"
+            alt="базовая компектация камина для вашего конструктора"
+            width="533"
+            height="374" />
+          <form class="constructor-form form" action="" method="">
+            <label class="form-label" for="range">Выберите длину </label>
+            <div class="form-range">
+              <span class="form-range-span">0.5 м</span>
+              <input class="form-range-input" id="range" type="range" min="0.5" max="10" step="0.5" value="6.5" checked />
+              <span class="form-range-span">10 м</span>
+            </div>
+            <label class="form-label" for="face-panel">Лицевая панель</label>
+            <div class="form-getpanel slider-btn">
+              <button class="btn form-getpanel-btn_prev slider-btn_prev"><span class="hidden">Предыдущий слайд</span></button>
+              <img class="form-getpanel-img" src="./assets/img/content/face-panel.png" alt="лицевая панель из материала 1" width="247" height="60" />
+              <button class="btn form-getpanel-btn_next slider-btn_next"><span class="hidden">Следующий слайд</span></button>
+            </div>
+            <div class="form-face-panel-container" id="face-panel">
+              <div class="form-face-panel-btn">
+                <input class="form-face-panel" id="radio-1" type="radio" name="material" value="материал 1" checked />
+                <label class="form-face-panel-label" for="radio-1"></label>
               </div>
-              <div class="form-face-panel-container" id="face-panel">
-                <input class="face-panel" type="radio" value="материал 1" />
-                <input class="face-panel" type="radio" value="материал 2" />
-                <input class="face-panel" type="radio" value="материал 3" />
-                <input class="face-panel" type="radio" value="материал 4" />
+              <div class="form-face-panel-btn">
+                <input class="form-face-panel" id="radio-2" type="radio" name="material" value="материал 2 " />
+                <label class="form-face-panel-label" for="radio-2"></label>
               </div>
-            </label>
-            <label class="form-label" for="additional"
-              ><p>Дополнительные функции</p>
-              <form action="">
-                <label for="child protect">Защита от детей</label>
-                <input type="checkbox" name="child protect" value="child protect" /><br />
-                <label for="wi-fi"> Wi-Fi</label>
-                <input type="checkbox" name="wi-fi" value="wi-fi" /><br />
-                <label for="child protect">Защита от детей</label>
-                <input type="checkbox" name="child protect" value="child protect" /><br />
-                <label for="wi-fi"> Wi-Fi</label>
-                <input type="checkbox" name="wi-fi" value="wi-fi" /><br />
-                <label for="child protect">Защита от детей</label>
-                <input type="checkbox" name="child protect" value="child protect" /><br />
-                <label for="wi-fi"> Wi-Fi</label>
-                <input type="checkbox" name="wi-fi" value="wi-fi" /><br />
-                <label for="child protect">Защита от детей</label>
-                <input type="checkbox" name="child protect" value="child protect" /><br />
-                <label for="wi-fi"> Wi-Fi</label>
-                <input type="checkbox" name="wi-fi" value="wi-fi" />
-              </form>
-            </label>
-          </div>
-          <div class="form-footer"></div>
-        </form>
+              <div class="form-face-panel-btn">
+                <input class="form-face-panel" id="radio-3" type="radio" name="material" value="материал 3" />
+                <label class="form-face-panel-label" for="radio-3"></label>
+              </div>
+              <div class="form-face-panel-btn">
+                <input class="form-face-panel" id="radio-4" type="radio" name="material" value="материал 4" />
+                <label class="form-face-panel-label" for="radio-4"></label>
+              </div>
+            </div>
+
+            <label class="form-label" for="additional">Дополнительные функции</label>
+            <div class="form-checkboxcontainer">
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="child protect" name="child protect" value="child protect" checked />
+                <label class="form-label_checkbox" for="child protect">Защита от детей</label>
+              </div>
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi" />
+                <label class="form-label_checkbox" for="wi-fi"> Wi-Fi</label>
+              </div>
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="child protect1" name="child protect" value="child protect" />
+                <label class="form-label_checkbox" for="child protect1">Защита от детей</label>
+              </div>
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi" />
+                <label class="form-label_checkbox" for="wi-fi"> Wi-Fi</label>
+              </div>
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="child protect2" name="child protect" value="child protect" />
+                <label class="form-label_checkbox" for="child protect2">Защита от детей</label>
+              </div>
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi" />
+                <label class="form-label_checkbox" for="wi-fi"> Wi-Fi</label>
+              </div>
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="child protect3" name="child protect" value="child protect" checked />
+                <label class="form-label_checkbox" for="child protect3">Защита от детей</label>
+              </div>
+              <div class="form-checkboxcontainer-btn">
+                <input class="form-checkboxcontainer-input" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi" />
+                <label class="form-label_checkbox" for="wi-fi"> Wi-Fi</label>
+              </div>
+            </div>
+            <div class="form-footer"></div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>
