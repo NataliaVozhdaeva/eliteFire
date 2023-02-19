@@ -212,7 +212,7 @@
             alt="базовая компектация камина для вашего конструктора"
             width="533"
             height="374" />
-          <form class="constructor-form form" action="" method="">
+          <form class="constructor-form form" id="order" action="" method="">
             <label class="form-label" for="range">Выберите длину </label>
             <div class="form-range">
               <span class="form-range-span">0.5 м</span>
@@ -243,7 +243,6 @@
                 <label class="form-face-panel-label" for="radio-4"></label>
               </div>
             </div>
-
             <label class="form-label" for="additional">Дополнительные функции</label>
             <div class="form-checkboxcontainer">
               <div class="form-checkboxcontainer-btn">
@@ -279,11 +278,44 @@
                 <label class="form-label_checkbox" for="wi-fi"> Wi-Fi</label>
               </div>
             </div>
-            <div class="form-footer"></div>
           </form>
+          <div class="form-footer">
+            <label for="" class="form-footer-label">
+              длина
+              <div class="form-footer-mean lenght">6.5 м</div>
+            </label>
+            <label for="" class="form-footer-label">
+              лицевая панель
+              <div class="form-footer-mean color"></div>
+            </label>
+            <label for="" class="form-footer-label">
+              стоимость
+              <div class="form-footer-mean cost">99 000₽</div>
+            </label>
+            <input class="btn form-footer-btn" type="submit" form="order" value="Оставить заявку" />
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <h2 class="footer-title title">Связаться с нами</h2>
+      <ul class="footer-contacts list">
+        <li class="footer-contacts-item">WhatsApp<a href="" class="footer-contacts-link link">+7911 306 4144</a></li>
+        <li class="footer-contacts-item">Телеграмм<a href="" class="footer-contacts-link link"> @elite_fire</a></li>
+        <li class="footer-contacts-item">
+          Почта
+          <a href="mailto:info@elite-fire.ru" class="footer-contacts-link link">info@elite-fire.ru</a>
+        </li>
+        <li class="footer-contacts-item">
+          Наш адрес<a href="" class="footer-contacts-link link"
+            >Россия, г. Москва,<br />
+            Варшавское шоссе, 170 г
+          </a>
+        </li>
+        <li class="footer-contacts-item">Телефон<a href="tel:8 911 306 4144" class="footer-contacts-link link">8 911 306 4144</a></li>
+        <li class="footer-contacts-item"><a href="" class="footer-contacts-link footer-contacts-link_btn link">Связаться с менеджером</a></li>
+      </ul>
+      <hr />
+    </footer>
   </body>
 </html>

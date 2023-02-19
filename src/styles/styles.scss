@@ -35,7 +35,6 @@
 
 @import './libs';
 
-$link: #949494;
 $link-hover: #ffcf7a;
 
 .list {
@@ -45,11 +44,10 @@ $link-hover: #ffcf7a;
 }
 
 .link {
-  color: $link;
   text-decoration: none;
 
   &:visited {
-    color: $link;
+    color: #ffffff;
   }
 
   &:hover {
@@ -93,5 +91,9 @@ $link-hover: #ffcf7a;
     padding: 15px 60px;
 
     background-image: url('../assets/img/bg/btn-bg.png');
+
+    &:hover {
+      box-shadow: 0 0 15px $link-hover;
+    }
   }
 }

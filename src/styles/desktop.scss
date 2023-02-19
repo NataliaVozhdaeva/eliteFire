@@ -1,12 +1,12 @@
 $bg: #1d1d1c;
 $yellow: #ffcf7a;
+$gray: #949494;
 
 * {
   box-sizing: border-box;
 }
 
 .body {
-  max-width: 1440px;
   margin: auto;
 
   font-family: 'Lab Grotesque', 'Arial', sans-serif;
@@ -17,9 +17,11 @@ $yellow: #ffcf7a;
 }
 
 .header {
-  margin: 75px 123px 188px;
+  max-width: 1440px;
+  margin: 75px auto 188px;
+  padding: 0 123px;
 
-  background: url('../assets/img/bg/small-circle-gradient.png') no-repeat right 80px top 30px;
+  background: url('../assets/img/bg/small-circle-gradient.png') no-repeat right 80px top -20px;
   background-size: 45%;
 }
 
@@ -66,6 +68,16 @@ $yellow: #ffcf7a;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  color: $gray;
+
+  &-link:visited {
+    color: $gray;
+  }
+
+  &-link:hover {
+    color: $yellow;
+  }
 }
 
 .call-link {
@@ -149,6 +161,10 @@ $yellow: #ffcf7a;
       }
     }
   }
+}
+.main {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .promo {
@@ -396,8 +412,8 @@ $yellow: #ffcf7a;
 }
 
 .about {
-  max-width: 1200px;
   margin: 0 auto 105px;
+  padding: 0 123px;
 
   &-title {
     position: relative;
@@ -437,7 +453,7 @@ $yellow: #ffcf7a;
 
   &-image {
     display: block;
-    margin: 0 auto 65px;
+    margin: 0 -123px 65px;
 
     &-container {
       position: relative;
@@ -456,12 +472,12 @@ $yellow: #ffcf7a;
 
       &::before {
         content: 'Яндекс.Алиса';
-        left: 275px;
+        left: 245px;
       }
 
       &::after {
         content: 'Mi Home Xiaomi';
-        right: 235px;
+        right: 20px;
       }
     }
   }
@@ -659,8 +675,7 @@ $yellow: #ffcf7a;
     &-container {
       display: flex;
       justify-content: space-between;
-      height: 375px;
-      margin-bottom: 68px;
+      flex-wrap: wrap;
     }
   }
 }
@@ -853,6 +868,115 @@ $yellow: #ffcf7a;
       &:checked + label::after {
         background: url('../assets/img/icons/add.png') no-repeat center center;
         background-color: $yellow;
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 68px auto 107px;
+    width: 100%;
+
+    &-label {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 458%;
+      letter-spacing: 0.135em;
+      text-transform: uppercase;
+
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &-mean.lenght {
+      font-size: 24px;
+      line-height: 229%;
+      color: #ffffff;
+      text-transform: none;
+    }
+
+    &-mean.color {
+      width: 28px;
+      height: 28px;
+      border-radius: 60%;
+      background-color: #b8542a;
+    }
+
+    &-mean.cost {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 111%;
+      letter-spacing: 0.05em;
+      color: $yellow;
+    }
+
+    &-btn {
+      box-sizing: border-box;
+      width: 254px;
+      height: 60px;
+      margin-top: 20px;
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+
+      background-image: url('../assets/img/bg/btn-bg.png');
+
+      &:hover {
+        box-shadow: 0 0 15px $yellow;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 72px 123px 18px;
+
+  background-color: #121212;
+
+  &-title {
+    width: 450px;
+    margin-bottom: 71px;
+
+    text-align: left;
+    background: linear-gradient(201.91deg, #fff 27.36%, rgba(255, 255, 255, 0) 106.46%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    max-height: 250px;
+
+    &-item {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 36px;
+
+      color: #949494;
+    }
+
+    &-link {
+      display: block;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 36px;
+
+      color: #ffffff;
+
+      &_btn {
+        width: 279px;
+        height: 60px;
+        padding: 11px 29px;
+
+        font-weight: 500;
+        font-size: 18px;
+
+        border: 1px solid #ceb787;
+        border-radius: 2px;
       }
     }
   }
