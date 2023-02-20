@@ -33,6 +33,7 @@ $gray: #949494;
 
   &-logo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 277px;
@@ -148,11 +149,11 @@ $gray: #949494;
       }
 
       &:first-child::before {
-        background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 0 73.52941176470588% no-repeat;
+        background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 0 73.52941176470588% no-repeat;
       }
 
       &:last-child::before {
-        background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 30.612244897959183% 73.52941176470588% no-repeat;
+        background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 30.612244897959183% 73.52941176470588% no-repeat;
       }
     }
   }
@@ -230,17 +231,17 @@ $gray: #949494;
       }
 
       &:first-child::before {
-        background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 51.21951219512195% 0 no-repeat;
+        background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 51.21951219512195% 0 no-repeat;
       }
 
       &:nth-child(2)::before {
         width: 45px;
 
-        background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 0 0 no-repeat;
+        background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 0 0 no-repeat;
       }
 
       &:last-child::before {
-        background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 100% 0 no-repeat;
+        background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 100% 0 no-repeat;
       }
     }
   }
@@ -385,12 +386,12 @@ $gray: #949494;
 
     &::before {
       left: 0;
-      background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 55.55555555555556% 64.1025641025641% no-repeat;
+      background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 55.55555555555556% 64.1025641025641% no-repeat;
     }
 
     &::after {
       left: 88px;
-      background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 74.07407407407408% 64.1025641025641% no-repeat;
+      background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 74.07407407407408% 64.1025641025641% no-repeat;
     }
 
     &-item:first-child::before {
@@ -585,13 +586,13 @@ $gray: #949494;
   &_prev {
     width: 18px;
     height: 18px;
-    background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 0 100% no-repeat;
+    background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 0 100% no-repeat;
   }
 
   &_next {
     width: 18px;
     height: 18px;
-    background: url('../assets/img/icons/css/svg/sprite.css-11461224.svg') 90.9090909090909% 62.5% no-repeat;
+    background: url('../assets/img/icons/css/svg/sprite.css-5bd8c59e.svg') 90.9090909090909% 62.5% no-repeat;
   }
 }
 

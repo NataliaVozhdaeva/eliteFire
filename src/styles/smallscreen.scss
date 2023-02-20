@@ -7,6 +7,8 @@ $gray: #949494;
   .promo,
   .carousel,
   .constructor,
+  .cases,
+  .production,
   .footer,
   .footer-wrapper {
     padding-left: 50px;
@@ -80,6 +82,10 @@ $gray: #949494;
 
     &-range {
       width: 100%;
+    }
+
+    &-getpanel-btn_next {
+      right: -32px;
     }
   }
 
@@ -168,6 +174,12 @@ $gray: #949494;
         top: 8px;
       }
     }
+
+    &:hover span,
+    &:hover span::before,
+    &:hover span::after {
+      background-color: $yellow;
+    }
   }
 }
 
@@ -179,6 +191,16 @@ $gray: #949494;
   .header {
     background: none;
     margin-bottom: 100px;
+  }
+
+  .navigation {
+    &-logo {
+      width: 150px;
+    }
+  }
+
+  .logo {
+    line-height: 1em;
   }
 
   .hero {
@@ -230,9 +252,9 @@ $gray: #949494;
     &-footer {
       flex-wrap: wrap;
 
-      &-label {
+      /*  &-label {
         width: 40vw;
-      }
+      } */
     }
 
     &-checkboxcontainer {
@@ -270,6 +292,7 @@ $gray: #949494;
     &-description {
       &-slider {
         width: 90vw;
+        height: auto;
       }
 
       &-item {
@@ -279,13 +302,16 @@ $gray: #949494;
       &-text {
         display: flex;
         flex-wrap: wrap;
-        width: 90vw;
+        width: 100%;
         flex-direction: row;
         justify-content: space-between;
         max-height: 100%;
 
-        &_figcaption::after {
-          display: none;
+        &_figcaption {
+          border-bottom: none;
+          &::after {
+            display: none;
+          }
         }
 
         & > li {
@@ -308,7 +334,8 @@ $gray: #949494;
   }
 
   .fuelblock-image {
-    width: 90vw;
+    width: 80vw;
+    height: auto;
   }
 
   .fuel {
@@ -316,7 +343,8 @@ $gray: #949494;
     padding-right: 50px;
 
     &-summary {
-      left: 22%;
+      top: 250px;
+      left: 40%;
     }
 
     &-image {
@@ -349,9 +377,90 @@ $gray: #949494;
   .footer {
     &-contacts {
       flex-direction: column;
+      align-items: flex-start;
+
+      &-item:nth-child(3) > .link {
+        font-size: 22px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 592px) {
+  .form-getpanel-img {
+    width: 55vw;
+    height: auto;
+  }
+
+  .footer {
+    &-wrapper {
+      padding: 50px 0;
+    }
+
+    &-title {
+      width: 100%;
+      text-align: center;
+    }
+
+    &-contacts-link_btn {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .call-link,
+  .fuel-summary-wrapper {
+    display: none;
+  }
+
+  .nav-mobile {
+    right: 50px;
+  }
+
+  .hero {
+    &-title {
+      font-size: 24px;
+    }
+
+    &-features {
+      width: 100%;
+    }
+  }
+
+  .fuel {
+    padding-bottom: 150px;
+
+    &-image {
+      width: 70vw;
+    }
+
+    &-feature {
+      bottom: -100px;
+    }
+  }
+
+  .about {
+    &-image-container {
+      display: none;
+    }
+
+    &-description-text {
+      column-gap: 5px;
+
+      &.personaloffer-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      & > li {
+        width: 80%;
+      }
+    }
+  }
+
+  .carousel-item {
+    max-width: 300px;
+    height: auto;
+  }
 }
