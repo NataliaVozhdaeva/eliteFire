@@ -56,4 +56,4 @@ function cleanDist() {
 
 exports.clean = series(cleanDist);
 exports.build = series(cleanDist, buildSvg, buildSass, html, copyimg);
-exports.default = series([buildSvg, buildSass], parallel(browsersync, serve));
+exports.default = series([cleanDist, buildSvg, buildSass], parallel(browsersync, serve));

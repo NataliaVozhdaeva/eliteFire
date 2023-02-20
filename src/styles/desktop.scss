@@ -68,6 +68,11 @@ $gray: #949494;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  &-mobile {
+    width: 0;
+    height: 0;
+  }
 }
 
 .call-link {
@@ -152,6 +157,7 @@ $gray: #949494;
     }
   }
 }
+
 .main {
   max-width: 1440px;
   margin: auto;
@@ -206,7 +212,7 @@ $gray: #949494;
       align-items: center;
 
       max-width: 247px;
-      max-height: 75px;
+      max-height: 50px;
       padding-left: 70px;
 
       font-weight: 300;
@@ -418,18 +424,6 @@ $gray: #949494;
     background: linear-gradient(247.29deg, #ffffff 55.25%, rgba(255, 255, 255, 0) 110.81%);
     background-clip: text;
     -webkit-background-clip: text;
-
-    &::after {
-      position: absolute;
-      top: 25px;
-      left: calc(50% - 20px);
-      content: '';
-
-      width: 40px;
-      height: 2px;
-
-      background-color: #949494;
-    }
   }
 
   &-subtitle {
@@ -474,15 +468,16 @@ $gray: #949494;
 
   &-description {
     display: flex;
-    gap: 83px 87px;
+    row-gap: 83px;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     &-item {
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      width: 46%;
+      width: 571px;
     }
 
     &-title {
@@ -999,7 +994,7 @@ $gray: #949494;
   height: 103px;
 
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.7em;
   line-height: 129%;
   letter-spacing: 0.05em;
   text-align: center;
@@ -1010,7 +1005,6 @@ $gray: #949494;
   &-logo {
     margin-right: 110px;
 
-    line-height: 70px;
     letter-spacing: 0.105em;
     text-transform: uppercase;
     text-align: left;
