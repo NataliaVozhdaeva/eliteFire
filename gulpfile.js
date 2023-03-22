@@ -47,7 +47,7 @@ function serve() {
 }
 
 function copyimg() {
-  return src('src/img/**/*.*').pipe(dest('dist/img/'));
+  return src('src/assets/**/*.*').pipe(dest('dist/assets/'));
 }
 
 function cleanDist() {
