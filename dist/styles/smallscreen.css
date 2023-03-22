@@ -1,0 +1,341 @@
+@charset "UTF-8";
+@media only screen and (max-width: 1200px) {
+  .header,
+  .about,
+  .promo,
+  .carousel,
+  .constructor,
+  .cases,
+  .production,
+  .footer,
+  .footer-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .promo-image {
+    max-width: 90vw;
+    height: auto;
+  }
+  .promo-features {
+    padding: 0;
+  }
+  .fuel {
+    padding-left: 50px;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .about-description {
+    justify-content: center;
+  }
+  .about-image {
+    max-width: 80vw;
+    height: auto;
+    margin: auto;
+  }
+  .about-image-container {
+    margin: 0;
+  }
+  .about-image-container::before, .about-image-container::after {
+    bottom: 35%;
+  }
+  .about-image-container::before {
+    content: "Яндекс.Алиса";
+    left: 25%;
+  }
+  .about-image-container::after {
+    content: "Mi Home Xiaomi";
+    right: 25%;
+  }
+  .carousel {
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .constructor-form-container {
+    justify-content: center;
+    row-gap: 50px;
+  }
+  .form {
+    align-items: center;
+    row-gap: 25px;
+  }
+  .form-range {
+    width: 100%;
+  }
+  .form-getpanel-btn_next {
+    right: -32px;
+  }
+  .footer-contacts {
+    max-height: 100%;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .header {
+    background-position: right bottom;
+    background-size: 50%;
+  }
+  .hero {
+    background-size: 50%;
+  }
+  .promo {
+    background-position: top 70px left 109px;
+  }
+  .fuel {
+    flex-wrap: wrap;
+    padding-top: 80px;
+  }
+  .fuel-descripton {
+    max-width: 70vw;
+    margin: auto;
+  }
+  .about-image-container::before, .about-image-container::after {
+    content: "";
+  }
+}
+@media only screen and (max-width: 930px) {
+  .navigationlist {
+    display: none;
+  }
+  .nav-mobile {
+    position: absolute;
+    top: 100px;
+    right: 40%;
+    z-index: 10;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .nav-mobile span {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #949494;
+  }
+  .nav-mobile span::before, .nav-mobile span::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #949494;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s;
+  }
+  .nav-mobile span::before {
+    top: -8px;
+  }
+  .nav-mobile span::after {
+    top: 8px;
+  }
+  .nav-mobile:hover span, .nav-mobile:hover span::before, .nav-mobile:hover span::after {
+    background-color: #ffcf7a;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .title {
+    font-size: 1.8em;
+  }
+  .header {
+    background: none;
+    margin-bottom: 100px;
+  }
+  .navigation-logo {
+    width: 150px;
+  }
+  .logo {
+    line-height: 1em;
+  }
+  .hero {
+    background: none;
+  }
+  .hero-title {
+    max-width: 90vw;
+    font-size: 40px;
+  }
+  .hero-features {
+    margin: auto;
+  }
+  .promo {
+    background: none;
+  }
+  .promo-image {
+    background: url("../assets/img/bg/main-gradient.png") no-repeat top -50px center;
+    background-size: 60%;
+  }
+  .promo-features {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .fuel-image {
+    width: 80vw;
+    height: auto;
+  }
+  .fuel-summary {
+    left: 0;
+  }
+  .fuel-summary::before, .fuel-summary::after {
+    display: none;
+  }
+  .form-footer {
+    flex-wrap: wrap;
+    /*  &-label {
+      width: 40vw;
+    } */
+  }
+  .form-checkboxcontainer {
+    column-gap: 0;
+  }
+  .aside {
+    padding-top: 30px;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    height: auto;
+  }
+  .aside-logo, .aside-agreement {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 592px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  .getcatalog-title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about-description-slider {
+    width: 90vw;
+    height: auto;
+  }
+  .about-description-item {
+    width: 90vw;
+  }
+  .about-description-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 100%;
+  }
+  .about-description-text_figcaption {
+    border-bottom: none;
+  }
+  .about-description-text_figcaption::after {
+    display: none;
+  }
+  .about-description-text > li {
+    width: 35vw;
+  }
+  .about-description-text_fuelblock {
+    max-width: 100%;
+  }
+  .promo-image {
+    margin: 0 0 40px;
+    background-size: 50%;
+    background-position-y: center;
+  }
+  .fuelblock-image {
+    width: 80vw;
+    height: auto;
+  }
+  .fuel {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .fuel-summary {
+    top: 250px;
+    left: 40%;
+  }
+  .fuel-image {
+    margin: 0;
+    width: 90vw;
+  }
+  .constructor-img {
+    width: 100%;
+    height: auto;
+  }
+  .form {
+    width: 90vw;
+  }
+  .form-checkboxcontainer {
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+  }
+  .form-range-input {
+    width: 50vw;
+  }
+  .footer-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-contacts-item:nth-child(3) > .link {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 592px) {
+  .form-getpanel-img {
+    width: 55vw;
+    height: auto;
+  }
+  .footer-wrapper {
+    padding: 50px 0;
+  }
+  .footer-title {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-contacts-link_btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .call-link,
+  .fuel-summary-wrapper {
+    display: none;
+  }
+  .nav-mobile {
+    right: 50px;
+  }
+  .hero-title {
+    font-size: 24px;
+  }
+  .hero-features {
+    width: 100%;
+  }
+  .fuel {
+    padding-bottom: 150px;
+  }
+  .fuel-image {
+    width: 70vw;
+  }
+  .fuel-feature {
+    bottom: -100px;
+  }
+  .about-image-container {
+    display: none;
+  }
+  .about-description-text {
+    column-gap: 5px;
+  }
+  .about-description-text.personaloffer-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-description-text > li {
+    width: 80%;
+  }
+  .carousel-item {
+    max-width: 300px;
+    height: auto;
+  }
+  .footer-contacts-link_btn {
+    padding: 11px 20px;
+  }
+}
+/*# sourceMappingURL=smallscreen.css.map */
