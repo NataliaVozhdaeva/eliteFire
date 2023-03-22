@@ -1,6 +1,6 @@
 ## Landing "Elite Fire" (fireplace for home)
 
-Watch in [browser] (https://nataliavozhdaeva.github.io/eliteFire/dist/)
+Watch in [browser](https://nataliavozhdaeva.github.io/eliteFire/dist/)
 
 **npm install** for install dependances;
 
